@@ -122,4 +122,17 @@ int main() {
 }
 
 
-// ------------#problem no:9 ==> Check whether a number is a prime number or not---------------
+// ------------#problem no:9 ==> Print the first N natural numbers using a loop---------------
+
+#include <stdio.h>
+int main() {
+    int n, i;
+    printf("Enter N: ");
+    scanf("%d", &n);
+    for(i=1; i<=n; i++)
+        printf("%d ", i);
+    return 0;
+}
+
+
+// ------------#problem no:10 ==> Print the first N natural numbers using a loop---------------

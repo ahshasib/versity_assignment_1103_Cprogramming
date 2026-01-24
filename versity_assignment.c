@@ -147,3 +147,13 @@ int main() {
     printf("Sum = %d\n", sum);
     return 0;
 }
+ 
+// ------------#problem no:11 ==> Print multiplication table of any number---------------#include <stdio.h>
+int main() {
+    int n, i;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    for(i = 1; i <= 10; i++)
+        printf("%d x %d = %d\n", n, i, n*i);
+    return 0;
+}

@@ -100,4 +100,26 @@ int main() {
 }
 
 
-// ------------#problem no:8 ==> Input a character and check if it's a vowel or consonant---------------
+// ------------#problem no:8 ==> Check whether a number is a prime number or not---------------
+
+#include <stdio.h>
+int main() {
+    int num, i, flag = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if(num <= 1) flag = 1;
+    for(i=2; i*i <= num; i++) {
+        if(num % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    if(flag == 0)
+        printf("%d is prime\n", num);
+    else
+        printf("%d is not prime\n", num);
+    return 0;
+}
+
+
+// ------------#problem no:9 ==> Check whether a number is a prime number or not---------------

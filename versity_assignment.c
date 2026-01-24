@@ -174,3 +174,20 @@ int main() {
     printf("Reversed number = %d\n", rev);
     return 0;
 }
+
+
+// ------------#problem no:13 ==> Count the digits in a number---------------
+
+#include <stdio.h>
+int main() {
+    int num, count = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while(num != 0) {
+        count++;
+        num /= 10;
+    }
+    printf("Total digits = %d\n", count);
+    return 0;
+}
+

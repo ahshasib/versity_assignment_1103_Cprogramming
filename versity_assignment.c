@@ -148,12 +148,29 @@ int main() {
     return 0;
 }
  
-// ------------#problem no:11 ==> Print multiplication table of any number---------------#include <stdio.h>
+// ------------#problem no:11 ==> Print multiplication table of any number---------------
+#include <stdio.h>
 int main() {
     int n, i;
     printf("Enter a number: ");
     scanf("%d", &n);
     for(i = 1; i <= 10; i++)
         printf("%d x %d = %d\n", n, i, n*i);
+    return 0;
+}
+
+
+// ------------#problem no:12 ==> Reverse a number using a loop---------------
+
+#include <stdio.h>
+int main() {
+    int num, rev = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while(num != 0) {
+        rev = rev * 10 + num % 10;
+        num /= 10;
+    }
+    printf("Reversed number = %d\n", rev);
     return 0;
 }

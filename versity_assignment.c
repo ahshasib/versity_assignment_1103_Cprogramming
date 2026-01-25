@@ -248,4 +248,20 @@ int main() {
 }
 
 
-// ------------#problem no:17 ==> Check whether a number is an Armstrong number---------------
+// ------------#problem no:17 ==> Find the sum of digits of a number---------------
+
+#include <stdio.h>
+int main() {
+    int num, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while(num != 0) {
+        sum += num % 10;
+        num /= 10;
+    }
+    printf("Sum of digits = %d\n", sum);
+    return 0;
+}
+
+
+// ------------#problem no:18 ==> Find the sum of digits of a number---------------

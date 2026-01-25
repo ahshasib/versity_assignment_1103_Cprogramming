@@ -264,4 +264,20 @@ int main() {
 }
 
 
-// ------------#problem no:18 ==> Find the sum of digits of a number---------------
+// ------------#problem no:18 ==> Find the product of digits of a number---------------
+
+#include <stdio.h>
+int main() {
+    int num, product = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while(num != 0) {
+        product *= num % 10;
+        num /= 10;
+    }
+    printf("Product of digits = %d\n", product);
+    return 0;
+}
+
+
+// ------------#problem no:19 ==> Find the product of digits of a number---------------

@@ -330,3 +330,22 @@ int main() {
     }
     return 0;
 }
+
+
+// ------------#problem no:22 ==> Count how many even and odd digits in a number---------------
+
+#include <stdio.h>
+int main() {
+    int num, even = 0, odd = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while(num != 0) {
+        if((num % 10) % 2 == 0)
+            even++;
+        else
+            odd++;
+        num /= 10;
+    }
+    printf("Even digits = %d\nOdd digits = %d\n", even, odd);
+    return 0;
+}

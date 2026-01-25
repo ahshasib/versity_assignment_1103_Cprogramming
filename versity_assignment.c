@@ -280,4 +280,21 @@ int main() {
 }
 
 
-// ------------#problem no:19 ==> Find the product of digits of a number---------------
+// ------------#problem no:19 ==> Print Fibonacci series up to N terms---------------
+
+#include <stdio.h>
+int main() {
+    int n, a = 0, b = 1, c, i;
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci Series: ");
+    for(i = 1; i <= n; i++) {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return 0;
+}
+
+// ------------#problem no:20 ==> Print Fibonacci series up to N terms---------------

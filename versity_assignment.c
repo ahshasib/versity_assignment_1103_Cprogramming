@@ -409,3 +409,29 @@ int main() {
     printf("Largest digit = %d\n", max);
     return 0;
 }
+
+
+// ------------#problem no:27 ==> Check if a number is a strong number---------------
+
+#include <stdio.h>
+int fact(int n) {
+    int i, f = 1;
+    for(i = 1; i <= n; i++)
+        f *= i;
+    return f;
+}
+int main() {
+    int num, temp, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    temp = num;
+    while(temp != 0) {
+        sum += fact(temp % 10);
+        temp /= 10;
+    }
+    if(sum == num)
+        printf("Strong number\n");
+    else
+        printf("Not a strong number\n");
+    return 0;
+}

@@ -449,3 +449,17 @@ int main() {
     printf("Sum of even numbers = %d\n", sum);
     return 0;
 }
+
+
+// ------------#problem no:29 ==> Print the sum of all odd numbers between 1 and N---------------
+
+#include <stdio.h>
+int main() {
+    int n, sum = 0, i;
+    printf("Enter N: ");
+    scanf("%d", &n);
+    for(i = 1; i <= n; i += 2)
+        sum += i;
+    printf("Sum of odd numbers = %d\n", sum);
+    return 0;
+}

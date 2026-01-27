@@ -463,3 +463,17 @@ int main() {
     printf("Sum of odd numbers = %d\n", sum);
     return 0;
 }
+
+
+// ------------#problem no:30 ==>Generate a star pattern using nested loops---------------
+
+#include <stdio.h>
+int main() {
+    int i, j;
+    for(i = 1; i <= 5; i++) {
+        for(j = 1; j <= i; j++)
+            printf("* ");
+        printf("\n");
+    }
+    return 0;
+}

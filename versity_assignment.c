@@ -435,3 +435,17 @@ int main() {
         printf("Not a strong number\n");
     return 0;
 }
+
+
+// ------------#problem no:28 ==> Print the sum of all even numbers between 1 and N---------------
+
+#include <stdio.h>
+int main() {
+    int n, sum = 0, i;
+    printf("Enter N: ");
+    scanf("%d", &n);
+    for(i = 2; i <= n; i += 2)
+        sum += i;
+    printf("Sum of even numbers = %d\n", sum);
+    return 0;
+}

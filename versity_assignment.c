@@ -495,3 +495,19 @@ int main() {
         printf("Not a perfect number\n");
     return 0;
 }
+
+
+// ------------#problem no:32 ==>Print all factors of a number using a loop---------------
+
+#include <stdio.h>
+int main() {
+    int num, i;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Factors: ");
+    for(i = 1; i <= num; i++) {
+        if(num % i == 0)
+            printf("%d ", i);
+    }
+    return 0;
+}

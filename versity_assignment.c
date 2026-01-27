@@ -375,3 +375,20 @@ int main() {
         printf("%d ", i);
     return 0;
 }
+
+
+// ------------#problem no:25 ==>Find the smallest digit in a number---------------
+
+#include <stdio.h>
+int main() {
+    int num, min = 9;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while(num != 0) {
+        if(num % 10 < min)
+            min = num % 10;
+        num /= 10;
+    }
+    printf("Smallest digit = %d\n", min);
+    return 0;
+}

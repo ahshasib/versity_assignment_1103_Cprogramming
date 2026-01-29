@@ -511,3 +511,18 @@ int main() {
     }
     return 0;
 }
+
+// ------------#problem no:33 ==>Find the sum of all factors of a number---------------
+
+#include <stdio.h>
+int main() {
+    int num, i, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for(i = 1; i <= num; i++) {
+        if(num % i == 0)
+            sum += i;
+    }
+    printf("Sum of factors = %d\n", sum);
+    return 0;
+}

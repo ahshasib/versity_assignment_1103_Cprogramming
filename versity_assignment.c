@@ -644,3 +644,5 @@ int main() {
         printf("Special character\n");
     return 0;
 }
+
+// ------------#problem no:40 ==>Print a number pattern (1, 12, 123, ...) using nested loops---------------

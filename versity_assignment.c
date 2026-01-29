@@ -578,4 +578,21 @@ int main() {
 }
 
 
-// ------------#problem no:36 ==>Count vowels and consonants in a string---------------
+// ------------#problem no:36 ==>Convert lowercase string to uppercase without library functions---------------
+
+#include <stdio.h>
+int main() {
+    char str[100];
+    int i;
+    printf("Enter lowercase string: ");
+    gets(str);
+    for(i = 0; str[i] != '\0'; i++) {
+        if(str[i] >= 'a' && str[i] <= 'z')
+            str[i] = str[i] - 32;
+    }
+    printf("Uppercase string: %s\n", str);
+    return 0;
+}
+
+
+// ------------#problem no:37 ==>Convert lowercase string to uppercase without library functions---------------
